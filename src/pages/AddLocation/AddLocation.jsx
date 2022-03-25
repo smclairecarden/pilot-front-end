@@ -1,4 +1,4 @@
-
+import { getMapLocation } from "../../services/api-calls"
 import { useState, useRef, useEffect } from "react"
 
 function AddLocation(props) {
@@ -7,6 +7,10 @@ function AddLocation(props) {
   const [formData, setFormData] = useState({
 		name: '',
 		description: '',
+	})
+
+	useEffect(() => {
+		getMapLocation()
 	})
 
   useEffect(()=> {
