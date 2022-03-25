@@ -1,4 +1,3 @@
-import { getMapLocation } from "../../services/api-calls"
 import { useState, useRef, useEffect } from "react"
 
 function AddLocation(props) {
@@ -9,9 +8,7 @@ function AddLocation(props) {
 		description: '',
 	})
 
-	useEffect(() => {
-		getMapLocation()
-	})
+
 
   useEffect(()=> {
     formElement.current.checkValidity() ? setValidForm(true) : setValidForm(false)

@@ -1,12 +1,6 @@
-import { getMapLocation } from "../../services/api-calls"
-import { useEffect } from 'react'
 
 function LocationList(props) {
   console.log(props.locations)
-
-  useEffect(() => {
-		getMapLocation()
-	})
 
   return (
     <>
