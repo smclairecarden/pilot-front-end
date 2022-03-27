@@ -1,6 +1,5 @@
 
 import { useState, useRef, useEffect } from "react"
-import { Navigate } from "react-router-dom"
 import { getLocation } from '../../services/locations'
 
 function AddLocation(props) {
