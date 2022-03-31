@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import { getLocation } from '../../services/locations'
+import styles from './LocationList.module.css'
 
 function LocationList(props) {
 const [binaryImage, setBinaryImage] = useState('')
@@ -18,10 +19,11 @@ const [binaryImage, setBinaryImage] = useState('')
 
   return (
     <>
-    <body>
+    <h2 className={styles.profileTitle}>Find a new swim spot!</h2>
+    <body className={styles.container}>
       {props.locations.length?
       <>
-      <h2>Find a new swim spot!</h2>
+      
         <div className="card-group">
           {props.locations.map((location) => (
               <Link 
