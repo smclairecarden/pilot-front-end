@@ -1,7 +1,15 @@
 .container {
+  margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+
+.profileTitle {
+  padding: 0px;
+  font-size: 40px;
+  margin: 0px;
 }

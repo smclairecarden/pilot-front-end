@@ -12,7 +12,7 @@ const Profiles = () => {
 
   return (
     <>
-    <h2>Find a swim buddy!</h2><br></br>
+    <h2 className={styles.profileTitle}>Find a Swim Buddy!</h2>
       <body className={styles.container}>
         {profiles.length ? 
           <>
