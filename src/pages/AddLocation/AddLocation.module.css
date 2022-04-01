@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+.label,
+.button {
+  margin-right: 0.5rem;
+  
+}
+
+.inputContainer {
+  margin-bottom: 1rem;
+  font-size: 15px;
+}
+
+
+
+

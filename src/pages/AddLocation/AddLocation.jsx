@@ -1,6 +1,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import { getLocation, handleApiSubmit } from '../../services/locations'
+import './AddLocation.module.css'
 
 function AddLocation(props) {
   const formElement = useRef()
@@ -56,9 +57,10 @@ function AddLocation(props) {
 
 	return (
 		<>
+		<div className="container">
 		<div className = "parent-card-group">
 			<h1>Add Location</h1>
-			<form autoComplete="off" ref={formElement} onSubmit={handleSubmit}>
+			<form autoComplete="off" ref={formElement} onSubmit={handleSubmit} className="form">
 				<div className="form-group mb-3">
 					<label htmlFor="name-input" className="form-label">
 						Location Name
@@ -134,6 +136,7 @@ function AddLocation(props) {
 						Add Swim Location
 					</button>
 			</form>
+		</div>
 		</div>
 		</>
 	)
